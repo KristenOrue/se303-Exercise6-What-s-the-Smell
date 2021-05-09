@@ -11,9 +11,16 @@ def draw_button(label_text, x, y, foreground_color, is_dark_mode)
   end
 end
 
-# class Button
+class Button
 
-# end
+  def initialize(label_text, x, y, foreground)
+    @label_text = label_text
+    @x = x
+    @y = y
+    @foreground = foreground
+  end
+
+end
 
 # def draw_button(label_text, x, y)
 #   paint()
