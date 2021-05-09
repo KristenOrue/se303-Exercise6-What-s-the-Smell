@@ -18,12 +18,13 @@ def lighten_foreground(label_text, x, y, foreground_color, is_dark_mode)
 end
 
 class Button
+  attr_accessor :label_text, :x, :y, :foreground_color,
 
-  def initialize(label_text, x, y, foreground)
+  def initialize(label_text, x, y, foreground_color)
     @label_text = label_text
     @x = x
     @y = y
-    @foreground = foreground
+    @foreground_color = foreground_color
   end
 
 end
